@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins";
+  color: #ffffff;
+  list-style: none;
+}
+
+body {
+  background-color: #1a1a1a;
+}
+
+/* GERAL */
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0px 2%;
+}
+
+button {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  width: 150px;
+  height: 40px;
+  border-color: #115511;
+  color: #115511;
+}
+
+/* HEADER */
+header {
+  background-color: black;
+  height: 100px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100000;
+}
+
+header .rolagem {
+  background-color: rgba(41, 41, 41, 0.431372549);
+  padding: 15px 4%;
+  transition: 1s;
+}
+
+.logo a {
+  width: 25%;
+  max-width: 250px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: aliceblue;
+  font-weight: 700;
+  padding: 15px 20px;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.logo span {
+  color: #115511;
+}
+
+.menu {
+  width: 100%;
+}
+
+.logo, .menu {
+  display: inline-block;
+  margin-right: -4px;
+  vertical-align: top;
+  position: relative;
+  height: 100%;
+}
+
+.menu ul {
+  list-style-type: none;
+  text-align: right;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.menu ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.menu ul li a:hover {
+  font-weight: bold;
+  color: #115511;
+  transition: 0.6s;
+}
+
+.menu ul li a button:hover {
+  color: #fff;
+  border-color: #fff;
+  filter: drop-shadow(10px 5px 3px #115511);
+  transition: 0.6s;
+}
+
+/* TOPO */
+.top p {
+  display: inline-block;
+  margin-right: -4px;
+  width: 50%;
+  vertical-align: middle;
+}/*# sourceMappingURL=styles.css.map */
