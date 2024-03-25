@@ -154,14 +154,16 @@ header .rolagem {
     flex-direction: column;
     padding-top: 200px;
     text-align: center;
-    line-height: 90px;
+    line-height: 50px;
+    gap: 30px;
     h1{
         font-size: 50px;
         font-weight: lighter;
     }
     
     h2{
-        font-size: 90px;
+        font-size: 70px;
+        color: #115511;
     }
     h3{
         font-weight: lighter;
@@ -173,6 +175,46 @@ header .rolagem {
             margin-left: 30px;
         }
 
+    }
+}
+
+.section_2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: black;
+    align-items: center;
+    padding: 50px;
+    .texto_1{
+        width: 400px;
+        margin: 0px;
+        border-right: solid 2px  #115511;
+        border-right: 30px;
+        h1{
+            font-size: 50px;
+            color: #115511;
+        }
+        p{
+            
+        }
+        .img{
+            padding-top: 20px;
+        
+            img{
+                margin-right: 5px;
+            }
+        }
+
+
+    }
+
+    .texto_2{
+        width: 400px;
+        padding-top: 25px;
+
+        h1{
+            color: #115511;
+        }
     }
 }
 html,body {

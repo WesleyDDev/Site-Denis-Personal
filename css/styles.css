@@ -144,14 +144,16 @@ header .rolagem {
   flex-direction: column;
   padding-top: 200px;
   text-align: center;
-  line-height: 90px;
+  line-height: 50px;
+  gap: 30px;
 }
 .card1 h1 {
   font-size: 50px;
   font-weight: lighter;
 }
 .card1 h2 {
-  font-size: 90px;
+  font-size: 70px;
+  color: #115511;
 }
 .card1 h3 {
   font-weight: lighter;
@@ -159,6 +161,38 @@ header .rolagem {
 }
 .card1 .butao button {
   margin-left: 30px;
+}
+
+.section_2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: black;
+  align-items: center;
+  padding: 50px;
+}
+.section_2 .texto_1 {
+  width: 400px;
+  margin: 0px;
+  border-right: solid 2px #115511;
+  border-right: 30px;
+}
+.section_2 .texto_1 h1 {
+  font-size: 50px;
+  color: #115511;
+}
+.section_2 .texto_1 .img {
+  padding-top: 20px;
+}
+.section_2 .texto_1 .img img {
+  margin-right: 5px;
+}
+.section_2 .texto_2 {
+  width: 400px;
+  padding-top: 25px;
+}
+.section_2 .texto_2 h1 {
+  color: #115511;
 }
 
 html, body {
