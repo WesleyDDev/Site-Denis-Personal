@@ -14,7 +14,7 @@ body {
 
 /* GERAL */
 .interface {
-  max-width: 1280px;
+  max-width: 100%;
   margin: 0 auto;
   height: 100%;
   padding: 0px 2%;
@@ -22,6 +22,7 @@ body {
 
 button {
   background-color: transparent;
+  border-radius: 5px;
   border: 2px solid #fff;
   color: #fff;
   font-size: 16px;
@@ -110,4 +111,90 @@ header .rolagem {
   margin-right: -4px;
   width: 50%;
   vertical-align: middle;
+}
+
+.conteudo_1 {
+  display: flex;
+}
+.conteudo_1 .img {
+  width: 100%;
+  height: 100%;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+  background-image: url(pexels-scott-webb-28080.jpg);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1a1a1a;
+  opacity: 0.9;
+}
+
+.card1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 200px;
+  text-align: center;
+  line-height: 50px;
+  gap: 30px;
+}
+.card1 h1 {
+  font-size: 50px;
+  font-weight: lighter;
+}
+.card1 h2 {
+  font-size: 70px;
+  color: #115511;
+}
+.card1 h3 {
+  font-weight: lighter;
+  font-size: 25px;
+}
+.card1 .butao button {
+  margin-left: 30px;
+}
+
+.section_2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: black;
+  align-items: center;
+  padding: 50px;
+}
+.section_2 .texto_1 {
+  width: 400px;
+  margin: 0px;
+  border-right: solid 2px #115511;
+  border-right: 30px;
+}
+.section_2 .texto_1 h1 {
+  font-size: 50px;
+  color: #115511;
+}
+.section_2 .texto_1 .img {
+  padding-top: 20px;
+}
+.section_2 .texto_1 .img img {
+  margin-right: 5px;
+}
+.section_2 .texto_2 {
+  width: 400px;
+  padding-top: 25px;
+}
+.section_2 .texto_2 h1 {
+  color: #115511;
+}
+
+html, body {
+  height: 100%;
 }/*# sourceMappingURL=styles.css.map */
