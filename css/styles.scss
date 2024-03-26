@@ -110,6 +110,24 @@ header .rolagem {
     transition: .6s;
 }
 
+.menu-mobile {
+    display: none;
+    width: 50%;
+    color: #fff;
+    margin-right: -4px;
+    text-align: right;
+    position: relative;
+    height: 100%;
+}
+
+.menu-mobile i {
+    position: absolute;
+    top: 50%;
+    right: -170px;
+    transform: translateY(-50%);
+    font-size: 30px;
+}
+
 /* TOPO */
 
 .top p {
@@ -194,9 +212,7 @@ header .rolagem {
             font-size: 50px;
             color: #115511;
         }
-        p{
-            
-        }
+       
         .img{
             padding-top: 20px;
         
