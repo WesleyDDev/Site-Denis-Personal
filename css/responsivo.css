@@ -1,0 +1,29 @@
+@media screen and (max-width: 1010px) {
+    header {
+        background-color: black;
+        height: 100px;
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 100000;
+    }
+
+
+    nav.menu {
+        display: none;
+        width: 100%;
+    }
+
+    div.menu-mobile {
+        display: inline-block;
+    }
+
+
+    .logo {
+        display: inline-block;
+        margin-right: -4px;
+        vertical-align: top;
+        position: relative;
+        height: 100%;
+    }
+}

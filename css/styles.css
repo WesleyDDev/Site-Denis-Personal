@@ -105,6 +105,24 @@ header .rolagem {
   transition: 0.6s;
 }
 
+.menu-mobile {
+  display: none;
+  width: 50%;
+  color: #fff;
+  margin-right: -4px;
+  text-align: right;
+  position: relative;
+  height: 100%;
+}
+
+.menu-mobile i {
+  position: absolute;
+  top: 50%;
+  right: -170px;
+  transform: translateY(-50%);
+  font-size: 30px;
+}
+
 /* TOPO */
 .top p {
   display: inline-block;
@@ -115,25 +133,16 @@ header .rolagem {
 
 .conteudo_1 {
   display: flex;
+  padding-top: -50px;
+  justify-content: center;
 }
 .conteudo_1 .img {
-  width: 100%;
-  height: 100%;
   width: 100%;
   height: 100vh;
   background-size: cover;
   position: relative;
+  margin-top: -100px;
   background-image: url(pexels-scott-webb-28080.jpg);
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #1a1a1a;
-  opacity: 0.9;
 }
 
 .card1 {
@@ -145,7 +154,7 @@ header .rolagem {
   padding-top: 200px;
   text-align: center;
   line-height: 50px;
-  gap: 30px;
+  gap: 40px;
 }
 .card1 h1 {
   font-size: 50px;
@@ -163,7 +172,21 @@ header .rolagem {
   margin-left: 30px;
 }
 
+@media (max-width: 750px) {
+  .card1 {
+    line-height: 40px;
+    margin: 10px;
+    gap: 10px;
+  }
+  h1 {
+    line-height: 60px;
+  }
+  h2 {
+    line-height: 60px;
+  }
+}
 .section_2 {
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -181,17 +204,31 @@ header .rolagem {
   font-size: 50px;
   color: #115511;
 }
+.section_2 .texto_1 p {
+  padding-top: 10px;
+}
 .section_2 .texto_1 .img {
   padding-top: 20px;
 }
 .section_2 .texto_1 .img img {
   margin-right: 5px;
 }
-.section_2 .texto_2 {
+@media (max-width: 750px) {
+  .section_2 h1 {
+    line-height: 45px;
+    padding-bottom: 15px;
+  }
+  .section_2 h2 {
+    line-height: 40px;
+  }
+}
+
+.texto_2 {
   width: 400px;
   padding-top: 25px;
 }
-.section_2 .texto_2 h1 {
+.texto_2 h1 {
+  font-size: 28px;
   color: #115511;
 }
 

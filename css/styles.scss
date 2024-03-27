@@ -110,6 +110,24 @@ header .rolagem {
     transition: .6s;
 }
 
+.menu-mobile {
+    display: none;
+    width: 50%;
+    color: #fff;
+    margin-right: -4px;
+    text-align: right;
+    position: relative;
+    height: 100%;
+}
+
+.menu-mobile i {
+    position: absolute;
+    top: 50%;
+    right: -170px;
+    transform: translateY(-50%);
+    font-size: 30px;
+}
+
 /* TOPO */
 
 .top p {
@@ -122,29 +140,22 @@ header .rolagem {
 .conteudo_1 {
    
     display:flex ;
-    
+    padding-top: -50px;
+    justify-content: center;
 
    .img{
-    width: 100%;
-    height: 100%;
+    
+    
     width: 100%;
        height: 100vh;
        background-size: cover;
        position: relative;
-
+       margin-top: -100px;
         background-image: url(pexels-scott-webb-28080.jpg);
    }
 }
 
-.overlay{
-    position: absolute;
-    top: 0;
-    left:0;
-    width: 100%;
-    height: 100%;
-    background-color: #1a1a1a;
-    opacity: 0.9;
-}
+
 
 .card1{
     display: flex;
@@ -155,7 +166,7 @@ header .rolagem {
     padding-top: 200px;
     text-align: center;
     line-height: 50px;
-    gap: 30px;
+    gap: 40px;
     h1{
         font-size: 50px;
         font-weight: lighter;
@@ -178,13 +189,37 @@ header .rolagem {
     }
 }
 
+@media(max-width:750px){
+   
+    .card1{
+        
+        
+        line-height: 40px;
+        margin: 10px;   
+        gap: 10px;
+        
+    }
+   
+   h1{
+    line-height: 60px;
+   }
+    
+    h2{
+        line-height: 60px;
+    }
+
+}  
+
 .section_2{
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     background-color: black;
     align-items: center;
     padding: 50px;
+   
+    
     .texto_1{
         width: 400px;
         margin: 0px;
@@ -194,9 +229,14 @@ header .rolagem {
             font-size: 50px;
             color: #115511;
         }
+
         p{
-            
+            padding-top: 10px;
         }
+        
+
+       
+
         .img{
             padding-top: 20px;
         
@@ -204,19 +244,31 @@ header .rolagem {
                 margin-right: 5px;
             }
         }
+}
 
+@media(max-width:750px){
 
+    h1{
+        line-height: 45px;
+        padding-bottom: 15px;
     }
+    h2{
+       line-height: 40px;
+    }
+}
 
+    
+}
     .texto_2{
         width: 400px;
         padding-top: 25px;
 
         h1{
+            font-size: 28px;
             color: #115511;
         }
     }
-}
+
 html,body {
     height: 100%;
 }
