@@ -15,6 +15,10 @@
     />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/responsivo.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <title>Denis Personal</title>
   </head>
   <body>
@@ -49,7 +53,7 @@
 
     <section class="conteudo_1">
       <div class="img">
-        <div class="overlay">
+        
          <div class="card1">
           <h1>Olá, Meu Nome é</h1>
           <h2>Denis Ferreira</h2>
@@ -67,6 +71,62 @@
    
     </section>
 
+    <section class="conteudo_planos">
+
+      
+      
+      <div class="titulo">
+
+        
+        <h1>
+          Conheça Nossos Planos
+        </h1>
+    </div>
+        <div class="box" id="bloco_cards">
+
+          
+          
+
+          
+          <div class="cards_planos">
+            <div class="img1"> </div>
+             <div class="texto1"><h1>Plano <br>Anual</h1>
+             <p>✅ Este plano oferece a oportunidade de alcançar e manter seus objetivos</p>
+           </div>
+            <div onclick="abrirModal()" class="botao_card">
+             <button>
+               Mais Informações
+             </button>
+            </div>
+           </div>
+          <div class="cards_planos">
+            <div class="img1"> </div>
+             <div class="texto1"><h1>Plano Semestral</h1>
+             <p> ✅ Obtenha força e energia  com nosso Plano Semestral "Força e Energia. </p>
+           </div>
+            <div onclick="abrirModal()" class="botao_card">
+             <button>
+               Mais Informações
+             </button>
+            </div>
+           </div>
+          
+           <div class="cards_planos">
+            <div class="img1"> </div>
+             <div class="texto1"><h1>Plano Trimestral</h1>
+             <p>✅ Inicie sua jornada rumo ao sucesso com nosso Plano Trimestral "Rumo ao Sucesso".</p>
+           </div>
+            
+           <div onclick="abrirModal()" class="botao_card">
+             <button>
+               Mais Informações
+             </button>
+            </div>
+           </div>
+        </div>
+
+       
+    </section>
     <section class="section_2">
         <div class="texto_1">
           <h1>Redes Sociais</h1>
@@ -89,6 +149,27 @@
           </ul>
         </div>
     </section>
+
+
+    <div class="janela_modal" id="janela_modal">
+      <div class="modal" id="modal">
+        <h2>Plano Anual</h2>
+        <p>Transforme seu corpo e sua saúde ao longo de um ano inteiro com nosso Plano Anual "Transformação Total". Com este plano, você terá acesso ilimitado a sessões de treinamento personalizado com um de nossos experientes Personal Trainers. 
+
+          <h3>Click Para Falar direto comigo</h3>
+          
+          <a href="https://web.whatsapp.com/send?phone=5531996874208" target="_blank"><img src="css/whatsapp (1).png" width="50px" alt=""></a>
+
+          
+
+      
+        <button class="fechar" id="fechar">
+            X
+        </button>
+      
+      </div>
+    </div>
+   
 
     <script src="index.js">
 

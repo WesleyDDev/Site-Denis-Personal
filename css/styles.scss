@@ -137,27 +137,42 @@ header .rolagem {
     vertical-align: middle;
 }
 
+
+
 .conteudo_1 {
    
     display:flex ;
-    padding-top: -50px;
+    
     justify-content: center;
+    height: 100%;
+    width: 100%;
+    
 
    .img{
     
     
-    width: 100%;
-       height: 100vh;
+       width: 100%;
+       height: 100%;
        background-size: cover;
-       position: relative;
-       margin-top: -100px;
+       
+       
+       
         background-image: url(pexels-scott-webb-28080.jpg);
-   }
+        background-position: center;
+
+        @media(max-width: 900px){
+
+            background-position: left
+        }
+    }
 }
 
 
 
 .card1{
+    animation: zoomIn;
+    animation-duration: 2s;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -190,18 +205,21 @@ header .rolagem {
 }
 
 @media(max-width:750px){
+
+    
    
     .card1{
         
+       
         
-        line-height: 40px;
+        line-height: 60px;
         margin: 10px;   
         gap: 10px;
         
     }
    
    h1{
-    line-height: 60px;
+    line-height: 30px;
    }
     
     h2{
@@ -210,6 +228,150 @@ header .rolagem {
 
 }  
 
+.box{
+    animation: slideInDown;
+    animation-duration: 2s;
+
+
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.conteudo_planos{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    height: 100%;
+    width: 100%;
+    
+    
+
+
+    
+    background-image: url(mulher-segurando-pesos-perto-de-halteres.jpg);
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+    
+    @media(max-width: 1000px){
+
+       
+       background-position: right
+
+        
+       
+       
+        
+    }
+       
+    
+
+    
+    
+    
+    
+
+    .titulo{
+        h1{
+            color: #115511;
+            padding-bottom: 50px;
+            padding-top: 50px;
+            font-size: 40px;
+            @media(max-width:750px){
+                display: none;
+                }
+
+          
+            
+        }
+    }
+
+    .cards_planos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 200px;
+        height: 400px;
+        background-color:transparent ;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px #115511a8;
+        backdrop-filter: blur(10px);
+
+        @media(max-width:750px){
+            display: none;
+        }
+        
+        @media(max-width:650px){
+                
+        }     
+        
+        .img1{
+            width: 200px;
+            height: 100%;
+            background-image: url(people-2604151_640\ \(3\).png);
+            background-size: cover;
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        
+
+    }
+    .cards_planos:hover{
+
+        scale: 1.05; 
+        transition: .5s;
+        
+
+    }
+    
+
+    .texto1{
+        margin: 10px;
+        text-align: center;
+        
+       
+       h1{
+
+
+        border-bottom: solid 2px #115511;
+        border-bottom: -3px;
+       }
+        p{
+            font-size: 15px;
+            font-weight: lighter;
+        }
+    }
+
+    .botao_card{
+       
+        button{
+            border: none;
+            background-color: #115511;
+            width: 200px;
+            border-radius: 0px 0px 10px 10px;
+            color: white;
+        }
+       
+            
+
+        
+    }
+    .botao_card button:hover{
+       color: #1a1a1a;
+       background-color: #198319;
+       font-weight: bolder;
+       transition: 0.4s ;
+      } 
+}
+
 .section_2{
     height: 100%;
     display: flex;
@@ -217,10 +379,16 @@ header .rolagem {
     justify-content: space-around;
     background-color: black;
     align-items: center;
-    padding: 50px;
-   
+    padding: 50px; 
+
     
-    .texto_1{
+
+    
+    .texto_1{ 
+
+        animation:fadeInLeft;
+        animation-duration: 2s;
+
         width: 400px;
         margin: 0px;
         border-right: solid 2px  #115511;
@@ -249,7 +417,7 @@ header .rolagem {
 @media(max-width:750px){
 
     h1{
-        line-height: 45px;
+        line-height: 75px;
         padding-bottom: 15px;
     }
     h2{
@@ -260,6 +428,10 @@ header .rolagem {
     
 }
     .texto_2{
+
+        animation:fadeInRight;
+        animation-duration: 2s;
+
         width: 400px;
         padding-top: 25px;
 
@@ -267,6 +439,86 @@ header .rolagem {
             font-size: 28px;
             color: #115511;
         }
+    }
+
+
+
+
+
+.janela_modal{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    background-color: #000000cb;
+    z-index: 999;
+    
+    .modal{
+
+        animation:zoomIn;
+        animation-duration: 1s;
+
+        position: fixed;
+        text-align: center;
+        background-color: #00000096;
+        height: 400px;
+        width: 350px;
+        border-radius: 20px;
+        border:solid 2px #115511 ;
+        box-shadow: 0px 0px 10px #115511;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        
+        
+
+        h2{
+           color: #115511;
+           
+           border-bottom: solid 2px #115511;
+           width: 200px;
+           margin: 0;
+           
+        }
+        p{
+            
+            font-weight: lighter;
+            font-size: 15px;
+            margin: 10px;
+        }
+
+        
+    }
+
+    
+    
+    button{
+        border-radius: 50%;
+        position:absolute;
+       height: 30px;
+       width: 30px;
+       top: -10px;
+       right: -10px;
+       
+       background-color: #000000;
+        
+       font-size: 20px;
+       font-weight: bolder;
+       
+        
+     
+       
+       
+    }
+}
+
+.janela_modal.abrir{
+        display: flex;
     }
 
 html,body {
