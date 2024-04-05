@@ -37,15 +37,16 @@ button {
 header {
   background-color: black;
   height: 100px;
-  position: sticky;
+  width: 100%;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 100000;
 }
 
-header .rolagem {
-  background-color: rgba(41, 41, 41, 0.431372549);
-  padding: 15px 4%;
+header.rolagem {
+  background-color: rgba(56, 53, 53, 0.9176470588);
+  padding: 10px 4%;
   transition: 1s;
 }
 
@@ -59,7 +60,6 @@ header .rolagem {
   font-weight: 700;
   padding: 15px 20px;
   font-size: 30px;
-  letter-spacing: 2px;
 }
 
 .logo span {
@@ -213,6 +213,7 @@ header .rolagem {
   width: 100%;
   background-image: url(mulher-segurando-pesos-perto-de-halteres.jpg);
   background-size: cover;
+  background-position: fixed;
   background-repeat: no-repeat;
 }
 @media (max-width: 1000px) {
