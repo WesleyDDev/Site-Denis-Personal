@@ -16,9 +16,5 @@ window.addEventListener("scroll", function(){
 
 
 
-    //interaçao_cards
 
-    function sumir_cards(){
-      const sumir = document.getElementById('bloco_cards')
-      }
       
